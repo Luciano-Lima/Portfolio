@@ -1,0 +1,13 @@
+@import 'config';
+@import './layouts/navbar';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(32, 15, 15);
+}
+

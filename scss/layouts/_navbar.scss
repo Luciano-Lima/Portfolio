@@ -1,0 +1,15 @@
+@use 'navbar';
+
+.navbar {
+    background-color: $primary-color;
+
+    li {
+        padding: 0 2rem;
+
+        a {
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+    }
+}
+

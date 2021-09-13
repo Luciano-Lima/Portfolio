@@ -1,0 +1,6 @@
+$primary-color: #eae3e3;
+
+// //Gradient
+@mixin gradient {
+    background: linear-gradient(to right, rgba($primary, 0.07), rgba($secondary, 0.09));
+}

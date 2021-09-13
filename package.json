@@ -1,0 +1,17 @@
+{
+  "name": "luciano-lima-portfolio",
+  "version": "1.0.0",
+  "description": "Luciano Lima Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "Bootstrap",
+    "Sass",
+    "Scss"
+  ],
+  "author": "Luciano Lima",
+  "license": "ISC"
+}
