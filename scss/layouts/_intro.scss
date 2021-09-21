@@ -1,1 +1,37 @@
+@use 'intro';
 
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 63px);  
+
+    @media (max-width: $breakpoint-small) {
+        height: 100%;
+    }
+    
+
+    &__lead{
+        font-size: 2rem;
+        color: burlywood;
+        text-transform: capitalize;
+
+        @media (max-width: $breakpoint-small) {
+            font-size: 1.1rem;
+        }
+
+        &--heading{
+            color: grey;
+            
+        }
+
+        &--show-text {
+            color: $secondary-color;
+            white-space: nowrap;
+            
+            @media (max-width: $breakpoint-small) {
+                font-size: 1rem;
+            }
+        }
+    }
+}

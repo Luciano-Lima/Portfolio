@@ -1,15 +1,32 @@
 @use 'navbar';
 .navbar {
-  background-color: #eae3e3;
+  padding: 0 2.5rem;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0;
+  }
 }
 
 .navbar li {
-  padding: 0 1.3rem;
+  padding: 0 2.5rem;
+}
+
+@media (max-width: 576px) {
+  .navbar li {
+    padding: 0;
+  }
 }
 
 .navbar li a {
   text-transform: capitalize;
-  font-weight: 300;
+  font-weight: 400;
+  color: #717476;
+}
+
+.navbar-toggler {
+  border: none;
 }
 
 @use 'typography';
@@ -17,6 +34,48 @@ h1, h2, h3, h4, h5 {
   font-weight: 600;
   margin: 2rem;
   text-align: center;
+  text-transform: capitalize;
+}
+
+@use 'intro';
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 63px);
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 100%;
+  }
+}
+
+.hero__lead {
+  font-size: 2rem;
+  color: burlywood;
+  text-transform: capitalize;
+}
+
+@media (max-width: 576px) {
+  .hero__lead {
+    font-size: 1.1rem;
+  }
+}
+
+.hero__lead--heading {
+  color: grey;
+}
+
+.hero__lead--show-text {
+  color: #717476;
+  white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+  .hero__lead--show-text {
+    font-size: 1rem;
+  }
 }
 
 * {
@@ -26,13 +85,15 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-  background-color: #fcfafa;
+  background: linear-gradient(to right, rgba(196, 196, 196, 0.3), rgba(113, 116, 118, 0.09));
+  height: 100%;
+  line-height: 1.5;
+  font-size: 1.1rem;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

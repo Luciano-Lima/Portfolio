@@ -1,6 +1,7 @@
 @import 'config';
 @import './layouts/navbar';
 @import './layouts/typography';
+@import './layouts/intro';
 
 * {
     box-sizing: border-box;
@@ -9,12 +10,14 @@
 }
 
 body {
-    background-color: rgb(252, 250, 250);
+    @include gradient;
+    height: 100%;
+    line-height: 1.5;
+    font-size: 1.1rem;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
 }

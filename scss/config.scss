@@ -1,6 +1,14 @@
-$primary-color: #eae3e3;
+$primary-color: rgba(196, 196, 196, 0.149);
+$secondary-color: rgba(113, 116, 118, 1);
+
+$body-color: #eaeff2;
+
+// Breakpoints
+$breakpoint-small: 576px;
+$breakpoint-table: 768px;
 
 // //Gradient
 @mixin gradient {
-    background: linear-gradient(to right, rgba($primary, 0.07), rgba($secondary, 0.09));
+    background: linear-gradient(to right, rgba($body-color, 0.3), rgba($secondary-color, 0.09));
+    
 }
