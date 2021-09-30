@@ -51,31 +51,37 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-.hero__lead {
+.hero__text {
   font-size: 2rem;
   color: burlywood;
   text-transform: capitalize;
 }
 
 @media (max-width: 576px) {
-  .hero__lead {
+  .hero__text {
     font-size: 1.1rem;
   }
 }
 
-.hero__lead--heading {
-  color: grey;
-}
-
-.hero__lead--show-text {
+.hero__heading {
   color: #717476;
   white-space: nowrap;
 }
 
 @media (max-width: 576px) {
-  .hero__lead--show-text {
+  .hero__heading {
     font-size: 1rem;
   }
+}
+
+@use 'about';
+@use 'footer';
+footer {
+  background: #c1c2c261;
+}
+
+footer social-media {
+  background-color: greenyellow;
 }
 
 * {
@@ -85,7 +91,6 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-  background: linear-gradient(to right, rgba(196, 196, 196, 0.3), rgba(113, 116, 118, 0.09));
   height: 100%;
   line-height: 1.5;
   font-size: 1.1rem;

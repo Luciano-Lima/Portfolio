@@ -10,8 +10,7 @@
         height: 100%;
     }
     
-
-    &__lead{
+    &__text{
         font-size: 2rem;
         color: burlywood;
         text-transform: capitalize;
@@ -19,19 +18,14 @@
         @media (max-width: $breakpoint-small) {
             font-size: 1.1rem;
         }
+    }
 
-        &--heading{
-            color: grey;
-            
-        }
+    &__heading{
+        color: $secondary-color;
+        white-space: nowrap;
 
-        &--show-text {
-            color: $secondary-color;
-            white-space: nowrap;
-            
-            @media (max-width: $breakpoint-small) {
-                font-size: 1rem;
-            }
+        @media (max-width: $breakpoint-small) {
+            font-size: 1rem;
         }
     }
 }

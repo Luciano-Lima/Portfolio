@@ -1,0 +1,9 @@
+@use 'footer';
+
+footer {
+    background: $footer-color;
+
+    social-media {
+        background-color: greenyellow;
+    }
+}
