@@ -1,2 +1,20 @@
 @use 'about';
 
+.about {
+    height: 100vh;
+    text-align: center;
+
+    &__heading{
+        color: $secondary-color;
+
+        &--text {
+            color: $heading-text;
+        }
+    }
+
+    &__img {
+        width: 75%;
+        border-radius: 50%;
+        border: 3px solid $heading-text;
+    }
+}

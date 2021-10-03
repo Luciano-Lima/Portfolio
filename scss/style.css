@@ -35,6 +35,7 @@ h1, h2, h3, h4, h5 {
   margin: 2rem;
   text-align: center;
   text-transform: capitalize;
+  font-family: 'Source Serif Pro', serif;
 }
 
 @use 'intro';
@@ -53,7 +54,7 @@ h1, h2, h3, h4, h5 {
 
 .hero__text {
   font-size: 2rem;
-  color: burlywood;
+  color: #deb887;
   text-transform: capitalize;
 }
 
@@ -75,6 +76,25 @@ h1, h2, h3, h4, h5 {
 }
 
 @use 'about';
+.about {
+  height: 100vh;
+  text-align: center;
+}
+
+.about__heading {
+  color: #717476;
+}
+
+.about__heading--text {
+  color: #deb887;
+}
+
+.about__img {
+  width: 75%;
+  border-radius: 50%;
+  border: 3px solid #deb887;
+}
+
 @use 'footer';
 footer {
   background: #c1c2c261;
@@ -94,6 +114,8 @@ body {
   height: 100%;
   line-height: 1.5;
   font-size: 1.1rem;
+  color: #717476;
+  font-family: 'Font Awesome 5 Brands', serif;
 }
 
 .wrapper {
