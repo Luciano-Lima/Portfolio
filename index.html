@@ -55,7 +55,7 @@
 		
 			<!-- Home page -->
 			<div class="container-fluid">
-				<div class="hero">
+				<section class="hero">
 					<div class="row">
 						<div class="col-lg-6 col-md-12 text-center hero__first-columm">
 							<span class="hero__text">an independent creative<br>web developer</span>
@@ -66,18 +66,17 @@
 							<img class="img-fluid hero__img" src="images/responsive-designs.png" alt="web-developer">
 						</div>
 					</div>
-				</div>
+				</section>
 			</div>
 			<!-- About section -->
 			<div class="container-fluid">
 				<section class="about">
-					<h1 class="about__heading">
-						About
+					<h1 class="about__heading">About
 						<span class="about__heading--text">Me</span>
 					</h1>
 					<div class="row">
 						<!-- <div class="about-info js-scroll slide-in-bottom"> -->
-							<div class="col-lg-6 col-md-12 about__first-columm">
+							<div class="col-lg-6 col-md-12 about__first-column">
 								<img 
 									class="about__img"
 									src="/images/luciano_Lima.jpeg"
@@ -86,28 +85,58 @@
 								/>
 							</div>
 							<!-- <div class="js-scroll slide-in-right"> -->
-								<div class="col-lg-6 col-md-12 about__secound-columm">
-									<h2>Hello, I'm Luciano Lima</h2>
-									<p>
-										I'm a self-taught Front End Web Developer and school-taught BTech,
-										System Analysis and Developement born in Brazil but living in
-										London for the last 15 years. 
-										<p>I've been<strong>'Making Things Happen</strong> 
-										since 2017; a year later I've decided to take a step further joining Code Institute where I got 
-										a Credencial Diploma in Full Stack Web Developement.</p>
-									</p>
-									<p class="about__get-in-touch">
-										If you are a business seeking a web presence or an employer
-										looking to hire, you can get in touch with me
-										<a href="#contact"><i class="fas fa-envelope"></i></a>
-									</p>
-									<p><strong>Download My Resume</strong><i class="fas fa-download"></i></p>
-								</div>
+							<div class="col-lg-6 col-md-12 about__secound-column">
+								<h2>Hello, I'm Luciano Lima</h2>
+								<p>
+									I'm a self-taught Front End Web Developer and school-taught BTech,
+									System Analysis and Developement born in Brazil but living in
+									London for the last 15 years. 
+									<p>I've been<strong>'Making Things Happen</strong> 
+									since 2017; a year later I've decided to take a step further joining Code Institute where I got 
+									a Credencial Diploma in Full Stack Web Developement.</p>
+								</p>
+								<p class="about__get-in-touch">
+									If you are a business seeking a web presence or an employer
+									looking to hire, you can get in touch with me
+									<a href="#contact"><i class="fas fa-envelope"></i></a>
+								</p>
+								<p><strong>Download My Resume</strong><i class="fas fa-download"></i></p>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 				</section>
 			</div>
+			<section id="portfolio" class="portfolio">
+				<h3 class="portfolio__heading">my
+					<span class="portfolio__heading--text">work</span>
+				</h3>
+				<div class="portfolio__row row">
+					<div class="col-md-4 col-sm-12">
+						<div class="portfolio__card card">
+							<img class="portfolio__img" src="./images/portfolio/cali-hair.png"  alt="caly hair style">
+							<div class="portfolio__card-body card-body">
+								<h5 class="portfolio__card-title card-title">caly hair</h5>
+								<p class="portfolio__card-text card-text">a project created for a hair stylist</p>
+								<p>skill used</p>
+								<ul class="portfolio__list list-group list-group-flush">
+									<li class="list-group-item">Phython - Django - Heroku</li>
+									<li class="list-group-item">Javascrip - Bootstrap - Html - Css</li>
+								</ul>
+								<div class="portfolio__link">
+									<a href="http://www.calyhair.com/" class="card-link" target="_blank">
+										<button type="button" class="btn btn-secondary">live version</button>
+									</a>
+									<a href="https://github.com/Luciano-Lima/caly-hair" class="card-link" target="_blank">
+										<button type="button" class="btn btn-secondary">github</button>
+									</a>
+								</div>
+								
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
 			<!-- Footer -->
 			<!-- <footer class="footer text-center">
 				<div class="footer__social-media p-4">
@@ -128,7 +157,7 @@
 					<!-- Copyright -->
 					<!-- <span class="text-center p-3 text-muted">© Designed & built by Luciano Lima</span> -->
 				<!-- </div> -->
-			</footer> -->
+			<!-- </footer>  -->
 		</div>
 		<!-- Bootstrap -->
 		<script
