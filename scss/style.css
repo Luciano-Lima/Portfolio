@@ -32,7 +32,7 @@
 @use 'typography';
 h1, h2, h3, h4, h5 {
   font-weight: 600;
-  margin: 2rem;
+  margin: 1.2rem;
   text-align: center;
   text-transform: capitalize;
   font-family: 'Source Serif Pro', serif;
@@ -43,13 +43,21 @@ h1, h2, h3, h4, h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   height: calc(100vh - 63px);
 }
 
 @media (max-width: 576px) {
-  .hero {
-    height: 100%;
+  .hero__img {
+    padding-top: 20px;
   }
+}
+
+.hero__first-columm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__text {
@@ -71,7 +79,8 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 576px) {
   .hero__heading {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 0;
   }
 }
 
@@ -79,6 +88,13 @@ h1, h2, h3, h4, h5 {
 .about {
   height: 100vh;
   text-align: center;
+}
+
+.about__first-columm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about__heading {
@@ -90,9 +106,17 @@ h1, h2, h3, h4, h5 {
 }
 
 .about__img {
-  width: 75%;
+  width: 60%;
   border-radius: 50%;
   border: 3px solid #deb887;
+}
+
+.about__get-in-touch {
+  font-family: cursive;
+}
+
+.about .fas {
+  color: #deb887;
 }
 
 @use 'footer';
@@ -115,11 +139,17 @@ body {
   line-height: 1.5;
   font-size: 1.1rem;
   color: #717476;
-  font-family: 'Font Awesome 5 Brands', serif;
+  font-family: 'Font Awesome 5 Brands, serif';
+}
+
+@media (max-width: 576px) {
+  body p {
+    font-size: .9rem;
+  }
 }
 
 .wrapper {
-  max-width: 1920px;
+  max-width: 1366px;
   width: 100%;
   margin: auto;
 }

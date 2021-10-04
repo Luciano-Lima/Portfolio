@@ -4,10 +4,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     height: calc(100vh - 63px);  
 
     @media (max-width: $breakpoint-small) {
-        height: 100%;
+        &__img {
+            padding-top: 20px;
+        }
+    }
+
+    &__first-columm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     &__text{
@@ -25,7 +35,10 @@
         white-space: nowrap;
 
         @media (max-width: $breakpoint-small) {
-            font-size: 1rem;
+            font-size: 1.2rem;
+            margin-bottom: 0;
         }
     }
+
+
 }

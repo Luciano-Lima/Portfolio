@@ -4,6 +4,13 @@
     height: 100vh;
     text-align: center;
 
+    &__first-columm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__heading{
         color: $secondary-color;
 
@@ -13,8 +20,16 @@
     }
 
     &__img {
-        width: 75%;
+        width: 60%;
         border-radius: 50%;
         border: 3px solid $heading-text;
+    }
+
+    &__get-in-touch {
+        font-family: cursive;
+    }
+
+    .fas {
+        color: $heading-text
     }
 }
