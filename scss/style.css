@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5 {
   text-align: center;
 }
 
-.about__first-columm {
+.about__first-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
