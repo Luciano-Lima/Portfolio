@@ -38,6 +38,10 @@ h1, h2, h3, h4, h5 {
   font-family: 'Source Serif Pro', serif;
 }
 
+.list-group-item {
+  font-size: .8rem;
+}
+
 @use 'intro';
 .hero {
   display: flex;
@@ -117,6 +121,44 @@ h1, h2, h3, h4, h5 {
 
 .about .fas {
   color: #deb887;
+}
+
+@use 'portfolio';
+.portfolio {
+  height: 100vh;
+}
+
+.portfolio__card {
+  background-color: #f1e1cc2e;
+  border: none;
+  box-shadow: 0px 0px 6px 0px #f1e1a6;
+}
+
+.portfolio__list {
+  white-space: nowrap;
+  overflow: scroll;
+}
+
+.portfolio__list--item {
+  color: #a3a3a3;
+  text-transform: capitalize;
+}
+
+.portfolio__link a {
+  text-decoration: none;
+}
+
+.portfolio__heading--text {
+  color: #deb887;
+}
+
+.portfolio__button {
+  background: #deb887;
+  border: none;
+  width: 45%;
+  white-space: nowrap;
+  padding: 0px;
+  font-size: .8rem;
 }
 
 @use 'footer';
