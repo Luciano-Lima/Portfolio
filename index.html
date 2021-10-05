@@ -40,13 +40,13 @@
 								<a class="nav-link active" aria-current="page" href="#">home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">about</a>
+								<a class="nav-link" href="#about">about</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">portfolio</a>
+								<a class="nav-link" href="#portfolio">portfolio</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">contact</a>
+								<a class="nav-link" href="#contact">contact</a>
 							</li>
 						</ul>
 					</div>
@@ -70,7 +70,7 @@
 			</div>
 			<!-- About section -->
 			<div class="container-fluid">
-				<section class="about">
+				<section id="about" class="about">
 					<h1 class="about__heading">About
 						<span class="about__heading--text">Me</span>
 					</h1>
@@ -106,34 +106,149 @@
 					</div>
 				</section>
 			</div>
+			<!-- Portfolio section -->
 			<section id="portfolio" class="portfolio">
 				<h3 class="portfolio__heading">my
 					<span class="portfolio__heading--text">work</span>
 				</h3>
 				<div class="portfolio__row row">
+					<!-- Caly hair -->
 					<div class="col-md-4 col-sm-12">
-						<div class="portfolio__card card">
+						<div class="portfolio__card card text-center">
 							<img class="portfolio__img" src="./images/portfolio/cali-hair.png"  alt="caly hair style">
 							<div class="portfolio__card-body card-body">
 								<h5 class="portfolio__card-title card-title">caly hair</h5>
-								<p class="portfolio__card-text card-text">a project created for a hair stylist</p>
-								<p>skill used</p>
+								<p class="portfolio__card-text card-text">A project created for a hair stylist</p>
+								<p>Skills Used</p>
 								<ul class="portfolio__list list-group list-group-flush">
-									<li class="list-group-item">Phython - Django - Heroku</li>
-									<li class="list-group-item">Javascrip - Bootstrap - Html - Css</li>
+									<li class="portfolio__list portfolio__list--item list-group-item">phython - django - heroku</li>
+									<li class="portfolio__list portfolio__list--item list-group-item">javascrip - bootstrap - html - css</li>
 								</ul>
 								<div class="portfolio__link">
 									<a href="http://www.calyhair.com/" class="card-link" target="_blank">
-										<button type="button" class="btn btn-secondary">live version</button>
+										<button type="button" class="portfolio__button btn btn-secondary">Live Version</button>
 									</a>
 									<a href="https://github.com/Luciano-Lima/caly-hair" class="card-link" target="_blank">
-										<button type="button" class="btn btn-secondary">github</button>
+										<button type="button" class="portfolio__button btn btn-secondary">Github</button>
 									</a>
 								</div>
-								
 							</div>
 						</div>
-
+					</div>
+					<!-- Queem -->
+					<div class="col-md-4 col-sm-12">
+						<div class="portfolio__card card text-center">
+							<img class="portfolio__img" src="./images/portfolio/Queen.png"  alt="Queem">
+							<div class="portfolio__card-body card-body">
+								<h5 class="portfolio__card-title card-title">queen</h5>
+								<p class="portfolio__card-text card-text">Code Institute First Milestone</p>
+								<p>Skills Used</p>
+								<ul class="portfolio__list list-group list-group-flush">
+									<li class="portfolio__list portfolio__list--item list-group-item">html - css</li>
+									<li class="portfolio__list portfolio__list--item list-group-item">jquery - bootstrap</li>
+								</ul>
+								<div class="portfolio__link">
+									<a href="https://luciano-lima.github.io/the-band-website/" class="card-link" target="_blank">
+										<button type="button" class="portfolio__button btn btn-secondary">Live Version</button>
+									</a>
+									<a href="https://github.com/Luciano-Lima/the-band-website" class="card-link" target="_blank">
+										<button type="button" class="portfolio__button btn btn-secondary">Github</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Ftt -->
+					<div class="col-md-4 col-sm-12">
+						<div class="portfolio__card card text-center">
+							<img class="portfolio__img" src="./images/portfolio/ftt-lifestyle.png"  alt="ftt-website">
+							<div class="portfolio__card-body card-body">
+								<h5 class="portfolio__card-title card-title">ftt-lifestyle</h5>
+								<p class="portfolio__card-text card-text">Fitness & Health Lifestyle</p>
+								<p>Skills Used</p>
+								<ul class="portfolio__list list-group list-group-flush">
+									<li class="portfolio__list portfolio__list--item list-group-item">html - scss - email-js</li>
+									<li class="portfolio__list portfolio__list--item list-group-item">javascrip - bootstrap</li>
+								</ul>
+								<div class="portfolio__link">
+									<a href="https://ftt-lifestyle.com/" class="card-link" target="_blank">
+										<button type="button" class="portfolio__button btn btn-secondary">Live Version</button>
+									</a>
+									<a href="https://github.com/Luciano-Lima/ftt-website" class="card-link" target="_blank">
+										<button type="button" class="portfolio__button btn btn-secondary">Github</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Cookbook -->
+					<div class="col-md-4 col-sm-12">
+						<div class="portfolio__card card text-center">
+							<img class="portfolio__img" src="./images/portfolio/Cookbook.png"  alt="Cookbook">
+							<div class="portfolio__card-body card-body">
+								<h5 class="portfolio__card-title card-title">my cookbook</h5>
+								<p class="portfolio__card-text card-text">Code Institute Third Milestone</p>
+								<p>Skills Used</p>
+								<ul class="portfolio__list list-group list-group-flush">
+									<li class="portfolio__list portfolio__list--item list-group-item">phython - flask - mongoDB - jinja2</li>
+									<li class="portfolio__list portfolio__list--item list-group-item">aws clauld9 - javascrip - bootstrap</li>
+								</ul>
+								<div class="portfolio__link">
+									<a href="https://my-cook-book.herokuapp.com/" class="card-link" target="_blank">
+										<button type="button" class="portfolio__button btn btn-secondary">Live Version</button>
+									</a>
+									<a href="https://github.com/Luciano-Lima/myCookbook" class="card-link" target="_blank">
+										<button type="button" class="portfolio__button btn btn-secondary">Github</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Amo -->
+					<div class="col-md-4 col-sm-12">
+						<div class="portfolio__card card text-center">
+							<img class="portfolio__img" src="./images/portfolio/amo-hair.png"  alt="Amo hair saloon">
+							<div class="portfolio__card-body card-body">
+								<h5 class="portfolio__card-title card-title">amo hair salon</h5>
+								<p class="portfolio__card-text card-text">A project created for a Hair Salon</p>
+								<p>Skills Used</p>
+								<ul class="portfolio__list list-group list-group-flush">
+									<li class="portfolio__list portfolio__list--item list-group-item">phython - django - heroku - amazon s3</li>
+									<li class="portfolio__list portfolio__list--item list-group-item">javascrip - bootstrap - css</li>
+								</ul>
+								<div class="portfolio__link">
+									<a href="https://amo-hair-beauty.herokuapp.com/" class="card-link" target="_blank">
+										<button type="button" class="portfolio__button btn btn-secondary">Live Version</button>
+									</a>
+									<a href="https://github.com/Luciano-Lima/amo-salon" class="card-link" target="_blank">
+										<button type="button" class="portfolio__button btn btn-secondary">Github</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Ecommerce -->
+					<div class="col-md-4 col-sm-12">
+						<div class="portfolio__card card text-center">
+							<img class="portfolio__img" src="./images/portfolio/online-store.png"  alt="online-store">
+							<div class="portfolio__card-body card-body">
+								<h5 class="portfolio__card-title card-title">Ecommerce</h5>
+								<p class="portfolio__card-text card-text">Code Institute Forth Milestone</p>
+								<p>Skills Used</p>
+								<ul class="portfolio__list list-group list-group-flush">
+									<li class="portfolio__list portfolio__list--item list-group-item">phython - django - heroku - amazon s3</li>
+									<li class="portfolio__list portfolio__list--item list-group-item">strip API - javascrip - bootstrap</li>
+								</ul>
+								<div class="portfolio__link">
+									<a href="https://luciano-online-store.herokuapp.com/" class="card-link" target="_blank">
+										<button type="button" class="portfolio__button btn btn-secondary">Live Version</button>
+									</a>
+									<a href="https://github.com/Luciano-Lima/ecommerce" class="card-link" target="_blank">
+										<button type="button" class="portfolio__button btn btn-secondary">Github</button>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
