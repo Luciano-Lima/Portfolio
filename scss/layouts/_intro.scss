@@ -5,11 +5,17 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    height: calc(100vh - 63px);  
+    // height: calc(100vh - 63px);  
 
     @media (max-width: $breakpoint-small) {
+
+        align-items: inherit;
+
+
         &__img {
-            padding-top: 20px;
+            width: 90%;
+            display: flex;
+            margin: auto;
         }
     }
 
@@ -26,7 +32,7 @@
         text-transform: capitalize;
 
         @media (max-width: $breakpoint-small) {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -35,8 +41,8 @@
         white-space: nowrap;
 
         @media (max-width: $breakpoint-small) {
-            font-size: 1.2rem;
-            margin-bottom: 0;
+            font-size: 1.3rem;
+            margin-top: 25px;
         }
     }
 

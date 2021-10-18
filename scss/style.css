@@ -30,12 +30,17 @@
 }
 
 @use 'typography';
-h1, h2, h3, h4, h5 {
-  font-weight: 600;
-  margin: 1.2rem;
+h1, h2, h3, h4 {
+  font-weight: 400;
   text-align: center;
   text-transform: capitalize;
   font-family: 'Source Serif Pro', serif;
+}
+
+@media (max-width: 576px) {
+  h1, h2, h3, h4 {
+    padding-top: 1rem;
+  }
 }
 
 .list-group-item {
@@ -48,12 +53,16 @@ h1, h2, h3, h4, h5 {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  height: calc(100vh - 63px);
 }
 
 @media (max-width: 576px) {
+  .hero {
+    align-items: inherit;
+  }
   .hero__img {
-    padding-top: 20px;
+    width: 90%;
+    display: flex;
+    margin: auto;
   }
 }
 
@@ -72,7 +81,7 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 576px) {
   .hero__text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -83,15 +92,24 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 576px) {
   .hero__heading {
-    font-size: 1.2rem;
-    margin-bottom: 0;
+    font-size: 1.3rem;
+    margin-top: 25px;
   }
 }
 
 @use 'about';
 .about {
+  display: flex;
   height: 100vh;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .about {
+    height: 100%;
+  }
 }
 
 .about__first-column {
@@ -124,14 +142,10 @@ h1, h2, h3, h4, h5 {
 }
 
 @use 'portfolio';
-.portfolio {
-  height: 100vh;
-}
-
 .portfolio__card {
   background-color: #f1e1cc2e;
   border: none;
-  box-shadow: 0px 0px 6px 0px #f1e1a6;
+  box-shadow: 0px 0px 3px 0px #f1e1a6;
 }
 
 .portfolio__list {
@@ -157,8 +171,54 @@ h1, h2, h3, h4, h5 {
   border: none;
   width: 45%;
   white-space: nowrap;
-  padding: 0px;
   font-size: .8rem;
+}
+
+@use 'contanct';
+.contact {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .contact {
+    height: 100%;
+  }
+}
+
+.contact__heading {
+  color: #717476;
+}
+
+.contact__heading--text {
+  color: #deb887;
+}
+
+.contact__form__group--btn {
+  background: #deb887;
+  border: none;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+  .contact__form__group--btn {
+    width: 100%;
+  }
+}
+
+.form-control {
+  background-color: #fdfaf6;
+  border: 1px solid #fdfaf6;
+  box-shadow: 0px 0px 3px 0px #f1e1a6;
+}
+
+.form-control:focus {
+  background-color: none;
+  border: 1px solid #fdfaf6;
+  box-shadow: 0px 0px 3px 0px #f1e1a6;
 }
 
 @use 'footer';
@@ -177,7 +237,6 @@ footer social-media {
 }
 
 body {
-  height: 100%;
   line-height: 1.5;
   font-size: 1.1rem;
   color: #717476;

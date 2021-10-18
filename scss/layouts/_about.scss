@@ -1,8 +1,15 @@
 @use 'about';
 
 .about {
+    display: flex;
     height: 100vh;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: $breakpoint-small) { 
+        height: 100%;
+    }
 
     &__first-column {
         display: flex;

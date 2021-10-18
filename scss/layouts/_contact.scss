@@ -1,0 +1,43 @@
+@use 'contanct';
+
+.contact {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: $breakpoint-small) { 
+        height: 100%;
+    }
+
+    &__heading{
+        color: $secondary-color;
+
+        &--text {
+            color: $heading-text;
+        }
+    }
+
+    &__form__group--btn {
+        background: $heading-text;
+        border: none;
+        white-space: nowrap;
+        margin-top: 10px;
+
+        @media (max-width: $breakpoint-small) { 
+            width: 100%;
+        }
+    }
+}
+
+.form-control {
+    background-color: $card-form-background-color;
+    border: 1px solid $card-form-background-color;
+    box-shadow: 0px 0px 3px 0px #f1e1a6;
+
+    &:focus {
+        background-color: none;
+        border: 1px solid $card-form-background-color;
+        box-shadow: 0px 0px 3px 0px #f1e1a6;
+    }
+}
