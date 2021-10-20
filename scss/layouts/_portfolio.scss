@@ -9,6 +9,20 @@
         box-shadow: 0px 0px 3px 0px #f1e1a6;
     }
 
+
+    &__card-title {
+        text-transform: capitalize;
+        color: $heading-text;
+
+        &--skills {
+            color: $portfolio-item;
+            font-size: 0.8rem;
+            font-family: 'Font Awesome 5 Brands, serif';
+            text-decoration: underline;
+            text-decoration-color: $heading-text;
+        }
+    }
+
     &__list {
         white-space: nowrap;
         overflow: scroll;
@@ -35,4 +49,8 @@
         font-size: .8rem;
     }
 
+}
+
+.row {
+    --bs-gutter-y: 1.5rem;
 }

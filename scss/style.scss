@@ -13,20 +13,6 @@
     padding: 0;
 }
 
-body {
-    // @include gradient;
-    line-height: 1.5;
-    font-size: 1.1rem;
-    color: $secondary-color;
-    font-family: 'Font Awesome 5 Brands, serif' ;
-
-    @media (max-width: $breakpoint-small) {
-       p {
-           font-size: .9rem;
-       }
-    }
-}
-
 .wrapper {
     max-width: 1366px;
     width: 100%;

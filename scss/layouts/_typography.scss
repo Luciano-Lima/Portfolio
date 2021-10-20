@@ -1,5 +1,24 @@
 @use 'typography';
 
+body {
+    // @include gradient;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    color: $secondary-color;
+    font-family: 'Font Awesome 5 Brands, serif';
+
+    p {
+        font-style: italic;
+        color: #717476bf;
+    }
+
+    @media (max-width: $breakpoint-small) {
+       p {
+           font-size: .9rem;
+       }
+    }
+}
+
 h1,h2,h3,h4 {
     font-weight: 400;
     text-align: center;
@@ -13,5 +32,5 @@ h1,h2,h3,h4 {
 
 .list-group-item {
     font-size: .8rem;
-    
 }
+

@@ -29,7 +29,31 @@
   border: none;
 }
 
+.nav-link {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #717476bf;
+}
+
 @use 'typography';
+body {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  color: #717476;
+  font-family: 'Font Awesome 5 Brands, serif';
+}
+
+body p {
+  font-style: italic;
+  color: #717476bf;
+}
+
+@media (max-width: 576px) {
+  body p {
+    font-size: .9rem;
+  }
+}
+
 h1, h2, h3, h4 {
   font-weight: 400;
   text-align: center;
@@ -75,6 +99,7 @@ h1, h2, h3, h4 {
 
 .hero__text {
   font-size: 2rem;
+  font-style: italic;
   color: #deb887;
   text-transform: capitalize;
 }
@@ -148,6 +173,19 @@ h1, h2, h3, h4 {
   box-shadow: 0px 0px 3px 0px #f1e1a6;
 }
 
+.portfolio__card-title {
+  text-transform: capitalize;
+  color: #deb887;
+}
+
+.portfolio__card-title--skills {
+  color: #a3a3a3;
+  font-size: 0.8rem;
+  font-family: 'Font Awesome 5 Brands, serif';
+  text-decoration: underline;
+  text-decoration-color: #deb887;
+}
+
 .portfolio__list {
   white-space: nowrap;
   overflow: scroll;
@@ -172,6 +210,10 @@ h1, h2, h3, h4 {
   width: 45%;
   white-space: nowrap;
   font-size: .8rem;
+}
+
+.row {
+  --bs-gutter-y: 1.5rem;
 }
 
 @use 'contanct';
@@ -209,6 +251,10 @@ h1, h2, h3, h4 {
   }
 }
 
+.contact__form__group--label {
+  color: #deb887;
+}
+
 .form-control {
   background-color: #fdfaf6;
   border: 1px solid #fdfaf6;
@@ -234,19 +280,6 @@ footer social-media {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
-  line-height: 1.5;
-  font-size: 1.1rem;
-  color: #717476;
-  font-family: 'Font Awesome 5 Brands, serif';
-}
-
-@media (max-width: 576px) {
-  body p {
-    font-size: .9rem;
-  }
 }
 
 .wrapper {

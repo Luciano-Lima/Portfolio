@@ -28,6 +28,10 @@
             width: 100%;
         }
     }
+
+    &__form__group--label {
+        color: $heading-text;
+    }
 }
 
 .form-control {
