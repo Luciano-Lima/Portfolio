@@ -194,6 +194,7 @@ h1, h2, h3, h4 {
 .portfolio__list--item {
   color: #a3a3a3;
   text-transform: capitalize;
+  background: #f9f4ee;
 }
 
 .portfolio__link a {
@@ -210,6 +211,7 @@ h1, h2, h3, h4 {
   width: 45%;
   white-space: nowrap;
   font-size: .8rem;
+  margin-top: 10px;
 }
 
 .row {
@@ -268,12 +270,21 @@ h1, h2, h3, h4 {
 }
 
 @use 'footer';
-footer {
-  background: #c1c2c261;
+.footer__social-media {
+  padding: 1.5rem !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
-footer social-media {
-  background-color: greenyellow;
+.footer__icon {
+  color: #deb887;
+}
+
+.footer__copyright {
+  font-size: .8rem;
+  color: #a3a3a3;
 }
 
 * {
