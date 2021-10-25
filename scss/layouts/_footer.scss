@@ -1,9 +1,21 @@
 @use 'footer';
 
-footer {
-    background: $footer-color;
+.footer {
 
-    social-media {
-        background-color: greenyellow;
+    &__social-media {
+        padding: 1.5rem!important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__icon {
+        color: $heading-text;
+    }
+
+    &__copyright {
+        font-size: .8rem;
+        color: $portfolio-item;
     }
 }
