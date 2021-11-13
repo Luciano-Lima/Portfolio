@@ -80,7 +80,6 @@ h1, h2, h3, h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 @media (max-width: 576px) {
@@ -190,7 +189,13 @@ strong {
 .portfolio__card {
   background-color: #f1e1cc2e;
   border: none;
-  box-shadow: 0px 0px 3px 0px #f1e1a6;
+  box-shadow: 0px 20px 23px -20px #deb887;
+}
+
+@media (max-width: 576px) {
+  .portfolio__card {
+    padding-top: 1rem;
+  }
 }
 
 .portfolio__card-title {
@@ -342,9 +347,21 @@ strong {
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 .wrapper {
   max-width: 1366px;
   width: 100%;
   margin: auto;
+}
+
+#hero,
+#about,
+#portfolio,
+#contact {
+  min-height: 100vh;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

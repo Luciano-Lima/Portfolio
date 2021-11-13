@@ -7,14 +7,28 @@
 @import './layouts/contact';
 @import './layouts/footer';
 
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
+
 .wrapper {
     max-width: 1366px;
     width: 100%;
     margin: auto;
+}
+
+#hero, 
+#about, 
+#portfolio, 
+#contact {
+    min-height: 100vh;
+    height: 100%;
 }
