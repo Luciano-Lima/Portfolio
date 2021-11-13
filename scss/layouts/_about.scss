@@ -40,6 +40,12 @@
     &__get-in-touch {
         font-family: 'Font Awesome 5 Free', 'cursive';
         color: $portfolio-item;
+
+        &--align-middle {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .fas {

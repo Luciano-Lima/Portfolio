@@ -71,6 +71,10 @@ h1, h2, h3, h4 {
   font-size: .8rem;
 }
 
+.row-small-fs {
+  font-size: 1rem;
+}
+
 @use 'intro';
 .hero {
   display: flex;
@@ -166,6 +170,12 @@ h1, h2, h3, h4 {
 .about__get-in-touch {
   font-family: 'Font Awesome 5 Free', 'cursive';
   color: #a3a3a3;
+}
+
+.about__get-in-touch--align-middle {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .about .fas {
