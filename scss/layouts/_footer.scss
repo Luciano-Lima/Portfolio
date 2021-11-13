@@ -1,7 +1,6 @@
 @use 'footer';
 
 .footer {
-
     &__social-media {
         padding: 1.5rem!important;
         display: flex;
@@ -10,6 +9,13 @@
 
     &__icon {
         color: $heading-text;
+        transition: all .2s ease-in-out;
+
+
+        &:hover {
+            color: $button-hover;
+            transform: scale(.9);
+        }
     }
 
     &__copyright {

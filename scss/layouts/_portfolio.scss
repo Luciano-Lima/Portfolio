@@ -18,8 +18,6 @@
             color: $portfolio-item;
             font-size: 0.8rem;
             font-family: 'Font Awesome 5 Brands, serif';
-            text-decoration: underline;
-            text-decoration-color: $heading-text;
         }
     }
 
@@ -31,6 +29,7 @@
             color: $portfolio-item ;
             text-transform: capitalize;
             background: $portfolio-list-item;
+            border: 2px solid $button-hover;
         }
     }
 
@@ -49,10 +48,32 @@
         white-space: nowrap;
         font-size: .8rem;
         margin-top: 10px;
-    }
+        transition: all .2s ease-in-out;
 
+        &:hover{
+            color: $secondary-color;
+            background-color: $button-hover;
+            border-color: #565e64;
+            box-shadow: none;
+            transform: scale(.9);
+        }
+
+        &:focus{
+            color: $secondary-color;
+            background-color: $button-hover;
+            border-color: #565e64;
+            box-shadow: 0 0 5px $heading-text;
+        }
+
+        &:active {
+            box-shadow: 0 0 5px $heading-text;
+            border-color: $heading-text;
+            background-color: $button-hover;
+        }
+    }
 }
 
-.row {
-    --bs-gutter-y: 1.5rem;
+
+.btn-secondary:active:focus {
+    box-shadow: none;
 }

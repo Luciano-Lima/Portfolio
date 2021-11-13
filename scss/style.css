@@ -158,11 +158,21 @@ h1, h2, h3, h4 {
   border: 3px solid #deb887;
 }
 
+.about__email {
+  width: 20%;
+  height: auto;
+}
+
 .about__get-in-touch {
-  font-family: cursive;
+  font-family: 'Font Awesome 5 Free', 'cursive';
+  color: #a3a3a3;
 }
 
 .about .fas {
+  color: #deb887;
+}
+
+strong {
   color: #deb887;
 }
 
@@ -182,8 +192,6 @@ h1, h2, h3, h4 {
   color: #a3a3a3;
   font-size: 0.8rem;
   font-family: 'Font Awesome 5 Brands, serif';
-  text-decoration: underline;
-  text-decoration-color: #deb887;
 }
 
 .portfolio__list {
@@ -195,6 +203,7 @@ h1, h2, h3, h4 {
   color: #a3a3a3;
   text-transform: capitalize;
   background: #f9f4ee;
+  border: 2px solid #fca00070;
 }
 
 .portfolio__link a {
@@ -212,10 +221,32 @@ h1, h2, h3, h4 {
   white-space: nowrap;
   font-size: .8rem;
   margin-top: 10px;
+  transition: all .2s ease-in-out;
 }
 
-.row {
-  --bs-gutter-y: 1.5rem;
+.portfolio__button:hover {
+  color: #717476;
+  background-color: #fca00070;
+  border-color: #565e64;
+  box-shadow: none;
+  transform: scale(0.9);
+}
+
+.portfolio__button:focus {
+  color: #717476;
+  background-color: #fca00070;
+  border-color: #565e64;
+  box-shadow: 0 0 5px #deb887;
+}
+
+.portfolio__button:active {
+  box-shadow: 0 0 5px #deb887;
+  border-color: #deb887;
+  background-color: #fca00070;
+}
+
+.btn-secondary:active:focus {
+  box-shadow: none;
 }
 
 @use 'contanct';
@@ -269,17 +300,25 @@ h1, h2, h3, h4 {
   box-shadow: 0px 0px 3px 0px #f1e1a6;
 }
 
+.portfolio__button--contact {
+  width: auto;
+}
+
 @use 'footer';
 .footer__social-media {
   padding: 1.5rem !important;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .footer__icon {
   color: #deb887;
+  transition: all .2s ease-in-out;
+}
+
+.footer__icon:hover {
+  color: #fca00070;
+  transform: scale(0.9);
 }
 
 .footer__copyright {

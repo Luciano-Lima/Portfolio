@@ -32,11 +32,21 @@
         border: 3px solid $heading-text;
     }
 
+    &__email {
+        width: 20%;
+        height: auto;
+    }
+
     &__get-in-touch {
-        font-family: cursive;
+        font-family: 'Font Awesome 5 Free', 'cursive';
+        color: $portfolio-item;
     }
 
     .fas {
         color: $heading-text
     }
+}
+
+strong {
+    color: $heading-text;
 }
