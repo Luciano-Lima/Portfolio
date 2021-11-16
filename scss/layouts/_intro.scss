@@ -11,13 +11,21 @@
 
         align-items: inherit;
 
-
         &__img {
             width: 90%;
             display: flex;
             margin: auto;
         }
     }
+
+    &__img {
+        transition: transform 0.8s;
+    
+        &:hover {
+            transform: perspective(200px) rotateY(-1deg)
+        }
+    }
+    
 
     &__first-columm {
         display: flex;
