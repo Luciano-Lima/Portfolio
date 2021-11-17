@@ -192,6 +192,8 @@ h1, h2, h3, h4 {
 
 .about .fas {
   color: #deb887;
+  font-size: 1.4rem;
+  transition: transform .8s;
 }
 
 strong {
@@ -351,12 +353,13 @@ strong {
 
 .footer__icon {
   color: #deb887;
-  transition: all .2s ease-in-out;
+  transition: .8s;
+  font-size: 1rem;
 }
 
 .footer__icon:hover {
   color: #fca00070;
-  transform: scale(0.9);
+  transform: perspective(200px) rotateY(-20deg);
 }
 
 .footer__copyright {

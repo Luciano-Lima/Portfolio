@@ -54,7 +54,9 @@
     }
 
     .fas {
-        color: $heading-text
+        color: $heading-text;
+        font-size: 1.4rem;
+        transition: transform .8s;
     }
 }
 

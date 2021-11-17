@@ -9,12 +9,13 @@
 
     &__icon {
         color: $heading-text;
-        transition: all .2s ease-in-out;
+        transition: .8s;
+        font-size: 1rem;
 
 
         &:hover {
             color: $button-hover;
-            transform: scale(.9);
+            transform: perspective(200px) rotateY(-20deg);
         }
     }
 
