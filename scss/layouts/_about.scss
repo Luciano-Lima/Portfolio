@@ -31,6 +31,7 @@
 		border-radius: 50%;
 		border: 2px solid $heading-text;
 		transition: transform 0.8s;
+		opacity: .6;
 
 		&:hover {
 			transform: perspective(200px) rotateY(-2deg);
