@@ -1,35 +1,43 @@
 @use 'navbar';
 
-
 .navbar {
-    // @include gradient;
+	// @include gradient;
 
-    padding: 0 2.5rem;
+	padding: 0 2.5rem;
 
-    @media (max-width: $breakpoint-small) {
-        padding: 0;
-    }
+	@media (max-width: $breakpoint-small) {
+		padding: 0;
+	}
 
-    li {
-        padding: 0 2.5rem;
-        
-        @media (max-width: $breakpoint-small) {
-            padding: 0;
-        }
+	li {
+		padding: 0 2.5rem;
 
-        a {
-            text-transform: capitalize;
-            font-weight: 400;
-            color: $secondary-color;
-        }
-    }
+		@media (max-width: $breakpoint-small) {
+			padding: 0;
+		}
 
-    &-toggler {
-        border: none;
-    }
-}
-.nav-link {
-    font-style: italic;
-    font-size: 0.9rem;
-    color: #717476bf;
+		a {
+			text-transform: capitalize;
+			font-weight: 400;
+		}
+	}
+
+	&-toggler {
+		border: none;
+	}
+
+	.nav-link {
+		font-style: italic;
+		
+		&:hover {
+			color: rgba(0, 0, 0, 0.7);
+			text-underline-position: under;
+			text-decoration: underline;
+			text-decoration-color: #faf1e6;
+			text-decoration-thickness: 4px;
+			transition-duration: 1s;
+			transition-timing-function: ease-in-out;
+			transform-style: preserve-3d;
+		}
+	}
 }

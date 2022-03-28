@@ -1,65 +1,65 @@
 @use 'about';
 
 .about {
-    display: flex;
-    height: 100vh;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
+	display: flex;
+	height: 100vh;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
 
-    @media (max-width: $breakpoint-small) { 
-        height: 100%;
-    }
+	@media (max-width: $breakpoint-small) {
+		height: 100%;
+	}
 
-    &__first-column {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+	&__first-column {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
-    &__heading{
-        color: $secondary-color;
+	&__heading {
+		color: $heading-text;
 
-        &--text {
-            color: $heading-text;
-        }
-    }
+		&--text {
+			color: $secondary-color;
+		}
+	}
 
-    &__img {
-        width: 60%;
-        border-radius: 50%;
-        border: 3px solid $heading-text;
-        transition: transform 0.8s;
+	&__img {
+		width: 60%;
+		border-radius: 50%;
+		border: 2px solid $heading-text;
+		transition: transform 0.8s;
 
-        &:hover {
-            transform: perspective(200px) rotateY(-2deg);
-        }
-    }
+		&:hover {
+			transform: perspective(200px) rotateY(-2deg);
+		}
+	}
 
-    &__email {
-        width: 20%;
-        height: auto;
-    }
+	&__email {
+		width: 20%;
+		height: auto;
+	}
 
-    &__get-in-touch {
-        font-family: 'Font Awesome 5 Free', 'cursive';
-        color: $portfolio-item;
+	&__get-in-touch {
+		font-family: 'Font Awesome 5 Free', 'cursive';
+		color: $portfolio-item;
 
-        &--align-middle {
-            display: grid;
-            justify-content: center;
-            align-items: center;
-        }
-    }
+		&--align-middle {
+			display: grid;
+			justify-content: center;
+			align-items: center;
+		}
+	}
 
-    .fas {
-        color: $heading-text;
-        font-size: 1.4rem;
-        transition: transform .8s;
-    }
+	.fas {
+		color: $heading-text;
+		font-size: 1.4rem;
+		transition: transform 0.8s;
+	}
 }
 
 strong {
-    color: $heading-text;
+	color: $heading-text;
 }

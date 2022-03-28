@@ -1,12 +1,12 @@
-$primary-color: rgba(196, 196, 196, 0.149);
-$secondary-color: rgba(113, 116, 118, 1);
+$primary-color: #a3b0ba;
+$secondary-color: #ebeef2d4;
 
-$body-color: #eaeff2;
+$body-color: #0c405a;
 $footer-color: #c1c2c261;
-$heading-text: #deb887;
+$heading-text: #f3f4f685;
 $portfolio-item: #a3a3a3;
-$portfolio-list-item: #f9f4ee;
-$button-hover:  #fca00070;
+$portfolio-list-item: #a3a3a33b;
+$button-hover: $secondary-color;
 
 $card-form-background-color: #fdfaf6;
 // $input-border-focus: red;
@@ -17,6 +17,5 @@ $breakpoint-table: 768px;
 
 // //Gradient
 @mixin gradient {
-    background: linear-gradient(to right, rgba($body-color, 0.3), rgba($secondary-color, 0.09));
-    
+	background: linear-gradient(to right, rgba($body-color, 0.3), rgba($secondary-color, 0.09));
 }

@@ -1,39 +1,44 @@
 @use 'typography';
 
 body {
-    // @include gradient;
-    line-height: 1.5;
-    font-size: 1.1rem;
-    color: $secondary-color;
-    font-family: 'Font Awesome 5 Brands, serif';
+	// @include gradient;
+	line-height: 1.5;
+	font-size: 1.1rem;
+	// color: $secondary-color;
+	font-family: 'Font Awesome 5 Brands, serif';
+	background: #0c405a;
 
-    p {
-        font-style: italic;
-        color: #717476bf;
-    }
+	p {
+		font-style: italic;
+		color: #a9bcf6bf;
+	}
 
-    @media (max-width: $breakpoint-small) {
-       p {
-           font-size: .9rem;
-       }
-    }
+	@media (max-width: $breakpoint-small) {
+		p {
+			font-size: 0.9rem;
+		}
+	}
 }
 
-h1,h2,h3,h4 {
-    font-weight: 400;
-    text-align: center;
-    text-transform: capitalize;
-    font-family: 'Source Serif Pro', serif;
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 400;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: 'Source Serif Pro', serif;
+	font-style: italic;
 
-    @media (max-width: $breakpoint-small) {
-        padding-top: 1rem;
-    }
+	@media (max-width: $breakpoint-small) {
+		padding-top: 1rem;
+	}
 }
 
 .list-group-item {
-    font-size: .8rem;
+	font-size: 0.8rem;
 }
 
 .row-small-fs {
-    font-size: 1rem;
+	font-size: 1rem;
 }

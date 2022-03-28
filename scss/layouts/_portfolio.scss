@@ -4,9 +4,9 @@
     // height: 100vh;
 
     &__card {
-        background-color: #f1e1cc2e;
+        background-color: #0a3348;
         border: none;
-        box-shadow: 0px 20px 23px -20px $heading-text;
+        box-shadow: 5px 14px 10px -14px $heading-text;
         transition-duration: .8s;
 
         @media (max-width: $breakpoint-small) {
@@ -46,8 +46,12 @@
         text-decoration: none;
     }
 
-    &__heading--text {
+    &__heading {
         color: $heading-text;
+    }
+
+    &__heading--text {
+        color: $secondary-color;
     }
 
     &__button {
@@ -63,7 +67,7 @@
         &:hover{
             width: 45%;
             height: auto;
-            color: $secondary-color;
+            color: #0a3348;
             background-color: $button-hover;
             box-shadow: inset 200px 0 0 0 $button-hover;
         }
