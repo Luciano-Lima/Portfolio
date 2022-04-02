@@ -18,6 +18,14 @@
 		align-items: center;
 	}
 
+	&__secound-column {
+		text-align: left;
+	}
+
+	&__third-column{
+		font-family: cursive;
+	}
+
 	&__heading {
 		color: $heading-text;
 
@@ -31,7 +39,7 @@
 		border-radius: 50%;
 		border: 2px solid $heading-text;
 		transition: transform 0.8s;
-		opacity: .6;
+		opacity: 0.6;
 
 		&:hover {
 			transform: perspective(200px) rotateY(-2deg);
@@ -44,20 +52,35 @@
 	}
 
 	&__get-in-touch {
-		font-family: 'Font Awesome 5 Free', 'cursive';
 		color: $portfolio-item;
+		text-align: center;
+
+		a {
+			text-decoration: none;
+		}
 
 		&--align-middle {
 			display: grid;
 			justify-content: center;
 			align-items: center;
+			justify-content: center;
+			align-items: end;	
+
+			p {
+				color: $portfolio-item;
+				white-space: nowrap;
+			}
 		}
+
 	}
 
 	.fas {
 		color: $heading-text;
 		font-size: 1.4rem;
 		transition: transform 0.8s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
 
