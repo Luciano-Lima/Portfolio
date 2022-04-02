@@ -9,13 +9,7 @@ $portfolio-list-item: #a3a3a33b;
 $button-hover: $secondary-color;
 
 $card-form-background-color: #fdfaf6;
-// $input-border-focus: red;
 
 // Breakpoints
 $breakpoint-small: 576px;
 $breakpoint-table: 768px;
-
-// //Gradient
-@mixin gradient {
-	background: linear-gradient(to right, rgba($body-color, 0.3), rgba($secondary-color, 0.09));
-}

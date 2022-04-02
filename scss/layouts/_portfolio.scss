@@ -1,8 +1,6 @@
 @use 'portfolio';
 
 .portfolio {
-    // height: 100vh;
-
     &__card {
         background-color: #0a3348;
         border: none;
@@ -17,7 +15,6 @@
             transform: scale(1.02);
         }
     }
-
 
     &__card-title {
         text-transform: capitalize;
@@ -80,7 +77,6 @@
             }
         }
         
-        
         &:focus{
             color: $secondary-color;
             background-color: $button-hover;
@@ -95,7 +91,6 @@
         }
     }
 }
-
 
 .btn-secondary:active:focus {
     box-shadow: none;
