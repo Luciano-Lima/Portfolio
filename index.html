@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Luciano Lima Portfolio</title>
-		<!-- Bootstrap CSS -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-		/>
-		<link rel="stylesheet" href="scss/style.css" />
-	</head>
-	<body>
-		<!-- Navegation -->
-		<nav class="navbar navbar-expand-lg navbar-light menu">
-			<div class="container-fluid">
-				<a class="navbar-brand logo-img" href="#"><img src="/images/Llima.png" alt="logo"></a>
-				<button
-				class="navbar-toggler"
-				type="button"
-				data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-				>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Luciano Lima Portfolio</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	<link rel="stylesheet" href="scss/style.css" />
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+	<script type="text/javascript">
+		emailjs.init('user_63sotr4It13QqLPE6nfLB')
+	</script>
+</head>
+
+<body>
+	<!-- Navegation -->
+	<nav class="navbar navbar-expand-lg navbar-light menu">
+		<div class="container-fluid">
+			<a class="navbar-brand logo-img" href="#"><img src="/images/Llima.png" alt="logo"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -257,56 +249,59 @@
 			<h4 class="contact__heading">Contact
 				<span class="contact__heading--text">Me</span>
 			</h4>
-			<div class="contact__form js-scroll slide-in-bottom">
-				<form id="contact__Form" action="" method="POST">
-					<input type="hidden" name="contact__Form" value="" />
+			<div id="msg" class="text-center"></div>
+			<form id="contact__Form"  action="" method="POST">
+				<input type="hidden" name="contact__Form" value="" />
+				<div class="contact__form__group">
+					<label for="id_name" class="contact__form__group--label requiredField">
+						Name<span class="asteriskField">*</span>
+					</label>
 					<div class="contact__form__group">
-						<label for="id_name" class="contact__form__group--label requiredField">
-							Name<span class="asteriskField">*</span>
-						</label>
-						<div class="contact__form__group">
-							<input type="text" name="name" maxlength="100" class="contact__form__group--control form-control" required id="id_name" />
-						</div>
+						<input type="text" name="name" maxlength="100" class="contact__form__group--control form-control" required id="id_name" />
 					</div>
+				</div>
+				<div class="contact__form__group">
+					<label for="id_email" class="contact__form__group--label requiredField">
+						Email<span class="asteriskField">*</span>
+					</label>
 					<div class="contact__form__group">
-						<label for="id_email" class="contact__form__group--label requiredField">
-							Email<span class="asteriskField">*</span>
-						</label>
-						<div class="contact__form__group">
-							<input type="email" name="email" class="contact__form__group--control form-control" required id="id_email" />
-						</div>
+						<input type="email" name="email" class="contact__form__group--control form-control" required id="id_email" />
 					</div>
+				</div>
+				<div class="contact__form__group">
+					<label for="id_message" class="contact__form__group--label requiredField">
+						Message<span class="asteriskField">*</span>
+					</label>
 					<div class="contact__form__group">
-						<label for="id_message" class="contact__form__group--label requiredField">
-							Message<span class="asteriskField">*</span>
-						</label>
-						<div class="contact__form__group">
-							<textarea name="message" cols="40" rows="10" class="contact__form__group--control--control textarea form-control" required id="id_message"></textarea>
-						</div>
+						<textarea name="message" cols="40" rows="10" class="contact__form__group--control--control textarea form-control" required id="id_message"></textarea>
 					</div>
-					<button type="submit" class="portfolio__button portfolio__button--submit btn btn-secondary" id="sendMessageButton">Submit</button>
-				</form>
-			</div>
+				</div>
+				<button type="submit" class="portfolio__button portfolio__button--submit btn btn-secondary" id="sendMessageButton">Submit</button>
+			</form>
 		</section>
 		<!-- Footer -->
+	</div>
+	<footer class="footer text-center">
+		<div class="footer__social-media p-4">
+			<!-- Linkedin -->
+			<a class="footer__icon" href="https://www.linkedin.com/in/luciano-lima-647712164/" target="_blank">
+				<i class="fab fa-linkedin fa-2x "></i>
+			</a>
+			<!-- Github -->
+			<a class="footer__icon" href="https://github.com/Luciano-Lima?tab=overview&from=2019-01-01&to=2019-01-31" target="_blank">
+				<i class="fab fa-github fa-2x"></i>
+			</a>
+			<!-- Copyright -->
 		</div>
-		<footer class="footer text-center">
-			<div class="footer__social-media p-4">
-				<!-- Linkedin -->
-				<a class="footer__icon" href="https://www.linkedin.com/in/luciano-lima-647712164/" target="_blank">
-					<i class="fab fa-linkedin fa-2x "></i>
-				</a>
-				<!-- Github -->
-				<a class="footer__icon" href="https://github.com/Luciano-Lima?tab=overview&from=2019-01-01&to=2019-01-31" target="_blank">
-					<i class="fab fa-github fa-2x"></i>
-				</a>
-				<!-- Copyright -->
-			</div>
-			<span class="footer__copyright text-center p-3">© Designed & built by Luciano Lima</span>
-		</footer>
-		<!-- Bootstrap -->
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"crossorigin="anonymous"></script>
-		<script src="js/script.js"></script>
-	</body>
+		<span class="footer__copyright text-center p-3">© Designed & built by Luciano Lima</span>
+	</footer>
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+	<script src="js/email.js"></script>
+</body>
+
 </html>
