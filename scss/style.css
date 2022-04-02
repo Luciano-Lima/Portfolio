@@ -1,6 +1,7 @@
 @use 'navbar';
 .navbar {
   padding: 0 2.5rem;
+  box-shadow: 1px 27px 20px -30px #f3f4f685;
 }
 
 @media (max-width: 576px) {
@@ -42,29 +43,23 @@
 }
 
 .logo-img img {
-  opacity: .9;
+  border: 1px solid #ebeef2d4;
+  opacity: .8;
   width: 100px;
-  height: 75px;
-}
-
-@media (max-width: 576px) {
-  .logo-img img {
-    width: 75px;
-    height: 60px;
-  }
+  border-radius: 50px;
 }
 
 @use 'typography';
 body {
-  line-height: 1.5;
-  font-size: 1.1rem;
-  font-family: 'Font Awesome 5 Brands, serif';
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
   background: #0c405a;
 }
 
 body p {
-  font-style: italic;
-  color: #a9bcf6bf;
+  font-style: inherit;
+  color: #a3b0ba;
 }
 
 @media (max-width: 576px) {
@@ -80,8 +75,8 @@ h4 {
   font-weight: 400;
   text-align: center;
   text-transform: capitalize;
-  font-family: 'Source Serif Pro', serif;
-  font-style: italic;
+  font-family: inherit;
+  font-style: inherit;
 }
 
 @media (max-width: 576px) {
@@ -137,9 +132,9 @@ h4 {
 
 .hero__text {
   font-size: 2rem;
-  font-style: italic;
   color: #f3f4f685;
   text-transform: capitalize;
+  line-height: 2.2rem;
 }
 
 @media (max-width: 576px) {
@@ -182,6 +177,14 @@ h4 {
   align-items: center;
 }
 
+.about__secound-column {
+  text-align: left;
+}
+
+.about__third-column {
+  font-family: cursive;
+}
+
 .about__heading {
   color: #f3f4f685;
 }
@@ -195,7 +198,7 @@ h4 {
   border-radius: 50%;
   border: 2px solid #f3f4f685;
   transition: transform 0.8s;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .about__img:hover {
@@ -208,20 +211,34 @@ h4 {
 }
 
 .about__get-in-touch {
-  font-family: 'Font Awesome 5 Free', 'cursive';
   color: #a3a3a3;
+  text-align: center;
+}
+
+.about__get-in-touch a {
+  text-decoration: none;
 }
 
 .about__get-in-touch--align-middle {
   display: grid;
   justify-content: center;
   align-items: center;
+  justify-content: center;
+  align-items: end;
+}
+
+.about__get-in-touch--align-middle p {
+  color: #a3a3a3;
+  white-space: nowrap;
 }
 
 .about .fas {
   color: #f3f4f685;
   font-size: 1.4rem;
   transition: transform 0.8s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 strong {
@@ -384,6 +401,7 @@ strong {
   padding: 1.5rem !important;
   display: flex;
   justify-content: space-evenly;
+  box-shadow: 1px 27px 20px -30px #f3f4f685;
 }
 
 .footer__icon {

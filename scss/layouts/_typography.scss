@@ -2,15 +2,15 @@
 
 body {
 	// @include gradient;
-	line-height: 1.5;
-	font-size: 1.1rem;
+	line-height: 1.5rem;
+	font-size: 1rem;
 	// color: $secondary-color;
-	font-family: 'Font Awesome 5 Brands, serif';
+	font-family: 'Lato', sans-serif;
 	background: #0c405a;
 
 	p {
-		font-style: italic;
-		color: #a9bcf6bf;
+		font-style: inherit;
+		color: $primary-color;
 	}
 
 	@media (max-width: $breakpoint-small) {
@@ -27,8 +27,8 @@ h4 {
 	font-weight: 400;
 	text-align: center;
 	text-transform: capitalize;
-	font-family: 'Source Serif Pro', serif;
-	font-style: italic;
+	font-family: inherit;
+	font-style: inherit;
 
 	@media (max-width: $breakpoint-small) {
 		padding-top: 1rem;

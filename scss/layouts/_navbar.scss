@@ -2,8 +2,9 @@
 
 .navbar {
 	// @include gradient;
-
 	padding: 0 2.5rem;
+    box-shadow: 1px 27px 20px -30px $heading-text;
+
 
 	@media (max-width: $breakpoint-small) {
 		padding: 0;
@@ -41,12 +42,8 @@
 }
 
 .logo-img img {
-	opacity: .9;
-	width: 100px;
-	height: 75px;
-
-	@media (max-width: $breakpoint-small) {
-		width: 75px;
-		height: 60px;
-	}
+	border: 1px solid $secondary-color;
+    opacity: .8;
+    width: 100px;
+    border-radius: 50px;
 }
