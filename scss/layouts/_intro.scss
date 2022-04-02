@@ -47,6 +47,8 @@
 	&__heading {
 		color: $secondary-color;
 		white-space: nowrap;
+		margin: 8px 0;
+    	font-size: 1.5rem;
 
 		@media (max-width: $breakpoint-small) {
 			font-size: 1.3rem;
