@@ -37,9 +37,9 @@
 	&__img {
 		width: 60%;
 		border-radius: 50%;
-		border: 2px solid $heading-text;
+		border: 2px solid $color;
 		transition: transform 0.8s;
-		opacity: 0.6;
+		opacity: 0.9;
 
 		&:hover {
 			transform: perspective(200px) rotateY(-2deg);
@@ -84,6 +84,3 @@
 	}
 }
 
-strong {
-	color: $heading-text;
-}

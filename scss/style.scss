@@ -14,10 +14,11 @@
     padding: 0;
 }
 
-html, body {
+body {
     height: 100%;
+    background: $background-color;
+    color: $color;
 }
-
 
 .wrapper {
     max-width: 1366px;

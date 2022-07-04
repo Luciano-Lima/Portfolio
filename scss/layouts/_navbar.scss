@@ -2,7 +2,7 @@
 
 .navbar {
 	padding: 0 2.5rem;
-    box-shadow: 0px -10px 25px 0px $heading-text;
+	box-shadow: 0px -60px 203px 0px $color;
 
 	@media (max-width: $breakpoint-small) {
 		padding: 0;
@@ -27,14 +27,14 @@
 
 	.nav-link {
 		font-style: italic;
-		color: $secondary-color!important;
+		color: $heading-text !important;
 		font-size: inherit;
 		
 		&:hover {
-			color: $heading-text!important;
+			color: $color !important;
 			text-underline-position: under;
 			text-decoration: underline;
-			text-decoration-color: $secondary-color;
+			text-decoration-color: $heading-text;
 		}
 	}
 }

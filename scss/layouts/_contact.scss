@@ -30,21 +30,20 @@
     }
 
     &__form__group--label {
-        color: $heading-text;
+        color: $primary-color;
     }
 }
 
 .form-control {
-    color: #7b8285;
-    background-color: $card-form-background-color;
+    background-color: $portfolio-background-color;
     border: 1px solid $card-form-background-color;
-    box-shadow: 0px 0px 3px 0px #f1e1a6;
+    box-shadow: 0px 0px 2px 0px $color;
     transition: all .3s ease-in-out;
     
     &:focus {
-        color: #c5d1d8;
-        background-color: #0c405a;
+        // color: #c5d1d8;
+        // background-color: #fff;
         border: 1px solid $card-form-background-color;
-        box-shadow: 0px 0px 3px 0px #f1e1a6;
+        box-shadow: 0px 0px 1px 0px $color;
     }
 }

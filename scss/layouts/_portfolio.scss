@@ -2,7 +2,7 @@
 
 .portfolio {
     &__card {
-        background-color: #0a3348;
+        background-color: $portfolio-background-color;
         border: none;
         box-shadow: 5px 14px 10px -14px $heading-text;
         transition-duration: .8s;
